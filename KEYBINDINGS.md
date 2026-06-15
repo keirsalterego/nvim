@@ -4,7 +4,7 @@ Every keyboard shortcut defined in this config, with what each one does.
 
 These are the **custom VSCode-style mappings** layered on top of LazyVim
 (source: [`lua/config/keymaps.lua`](lua/config/keymaps.lua)). All of LazyVim's
-default `<leader>`-prefixed mappings remain available on top of these — press
+default `<leader>`-PREFIXED mappings remain available on top of these — press
 `<Space>` and wait for which-key, or see the
 [LazyVim keymaps](https://www.lazyvim.org/keymaps).
 

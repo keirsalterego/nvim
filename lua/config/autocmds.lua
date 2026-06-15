@@ -7,6 +7,28 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
+-- ---------------------------------------------------------------------------
+-- AI agent terminal panels (Gemini, OpenCode)
+-- Claude Code has its own autocmd in lua/plugins/claude-code.lua.
+-- All three share the same darkened-bg logic via config.ai_panel.
+-- ---------------------------------------------------------------------------
+vim.api.nvim_create_autocmd({ "TermOpen", "BufWinEnter" }, {
+  group = vim.api.nvim_create_augroup("ai_agent_panels", { clear = true }),
+  callback = function(ev)
+    if vim.bo[ev.buf].buftype ~= "terminal" then
+      return
+    end
+    local name = vim.api.nvim_buf_get_name(ev.buf)
+    if not (name:match("gemini") or name:match("opencode") or name:match("open%-code")) then
+      return
+    end
+    local win = vim.fn.bufwinid(ev.buf)
+    if win ~= -1 then
+      require("config.ai_panel").apply(win)
+    end
+  end,
+})
+
 -- Autoformat setting
 local set_autoformat = function(pattern, bool_val)
   vim.api.nvim_create_autocmd({ "FileType" }, {

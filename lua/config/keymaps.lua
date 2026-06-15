@@ -188,6 +188,54 @@ map("n", "<F8>", diag_jump(1), { desc = "Next Problem" })
 map("n", "<S-F8>", diag_jump(-1), { desc = "Previous Problem" })
 
 -- ---------------------------------------------------------------------------
+-- Git (Ctrl+Shift+G) — Neogit TUI, configured in plugins/neogit.lua
+-- ---------------------------------------------------------------------------
+map("n", "<C-S-g>", function() require("neogit").open({ kind = "floating" }) end, { desc = "Git (Neogit)" })
+
+-- ---------------------------------------------------------------------------
 -- Integrated terminal (Ctrl+`) — floating, configured in plugins/terminal.lua
 -- ---------------------------------------------------------------------------
 map({ "n", "i", "t" }, "<C-`>", function() Snacks.terminal.toggle() end, { desc = "Toggle Terminal" })
+
+-- ---------------------------------------------------------------------------
+-- AI assistant panels — right-docked vertical, ~35% width (VSCode Copilot style)
+--   <leader>ac  Claude Code (see plugins/claude-code.lua)
+--   <leader>ag  Gemini CLI  (Snacks terminal, defined here)
+--   <leader>ao  OpenCode    (Snacks terminal, defined here)
+-- ---------------------------------------------------------------------------
+map("n", "<leader>ag", function()
+  Snacks.terminal.toggle("gemini", {
+    win = {
+      position = "right",
+      width = 0.35,
+      -- Snacks already creates the terminal buffer unlisted and sets
+      -- winfixwidth on vertical splits, so the Gemini panel never had the
+      -- "duplicating" bug. We add winfixbuf (and restate the rest explicitly)
+      -- to hard-lock it in place like the VSCode Copilot sidebar — matching the
+      -- Claude Code panel. Trade-off: if this panel is your only window and you
+      -- open a file you'll hit "E1513: cannot switch buffer"; open it elsewhere.
+      bo = { buflisted = false },
+      wo = { winfixwidth = true, winfixbuf = true },
+      title = " Gemini CLI ",
+      title_pos = "center",
+    },
+  })
+end, { desc = "Toggle Gemini CLI" })
+
+map("n", "<leader>ao", function()
+  Snacks.terminal.toggle("opencode", {
+    win = {
+      position = "right",
+      width = 0.35,
+      -- Same as the Gemini panel: Snacks opens the terminal buffer unlisted
+      -- and sets winfixwidth on vertical splits, so it never "duplicates". We
+      -- add winfixbuf (and restate the rest) to hard-lock it in place like the
+      -- VSCode Copilot sidebar. Trade-off: if this panel is your only window and
+      -- you open a file you'll hit "E1513: cannot switch buffer"; open elsewhere.
+      bo = { buflisted = false },
+      wo = { winfixwidth = true, winfixbuf = true },
+      title = " OpenCode ",
+      title_pos = "center",
+    },
+  })
+end, { desc = "Toggle OpenCode" })
