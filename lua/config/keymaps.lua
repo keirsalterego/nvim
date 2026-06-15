@@ -188,9 +188,13 @@ map("n", "<F8>", diag_jump(1), { desc = "Next Problem" })
 map("n", "<S-F8>", diag_jump(-1), { desc = "Previous Problem" })
 
 -- ---------------------------------------------------------------------------
--- Git (Ctrl+Shift+G) — Neogit TUI, configured in plugins/neogit.lua
+-- Git (Ctrl+Shift+G) — lazygit TUI (external, simpler)
 -- ---------------------------------------------------------------------------
-map("n", "<C-S-g>", function() require("neogit").open({ kind = "floating" }) end, { desc = "Git (Neogit)" })
+map("n", "<C-S-g>", function()
+  Snacks.terminal.toggle("lazygit", {
+    win = { position = "float", width = 0.85, height = 0.85, title = " lazygit ", title_pos = "center" },
+  })
+end, { desc = "Git (lazygit)" })
 
 -- ---------------------------------------------------------------------------
 -- Integrated terminal (Ctrl+`) — floating, configured in plugins/terminal.lua
