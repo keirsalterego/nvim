@@ -43,6 +43,65 @@ set_autoformat({ "cpp" }, false)
 set_autoformat({ "c" }, false)
 set_autoformat({ "yaml" }, false)
 
+-- Per-language indentation
+local indent = {
+  python = { sw = 4, ts = 4 },
+  bash = { sw = 2, ts = 2 },
+  sh = { sw = 2, ts = 2 },
+  zig = { sw = 4, ts = 4 },
+  php = { sw = 4, ts = 4 },
+  haskell = { sw = 2, ts = 2 },
+  rust = { sw = 4, ts = 4 },
+  lua = { sw = 2, ts = 2 },
+  json = { sw = 2, ts = 2 },
+  yaml = { sw = 2, ts = 2 },
+  toml = { sw = 2, ts = 2 },
+  cmake = { sw = 2, ts = 2 },
+  nushell = { sw = 2, ts = 2 },
+  markdown = { sw = 2, ts = 2 },
+  tex = { sw = 4, ts = 4 },
+  sql = { sw = 4, ts = 4 },
+  dockerfile = { sw = 4, ts = 4 },
+  javascript = { sw = 2, ts = 2 },
+  typescript = { sw = 2, ts = 2 },
+  vue = { sw = 2, ts = 2 },
+  twig = { sw = 2, ts = 2 },
+  css = { sw = 2, ts = 2 },
+  tailwind = { sw = 2, ts = 2 },
+  typst = { sw = 2, ts = 2 },
+}
+
+local indent_tabs = {
+  go = { sw = 8, ts = 8 },
+  make = {},
+  c = { sw = 4, ts = 4 },
+  cpp = { sw = 4, ts = 4 },
+}
+
+for ft, cfg in pairs(indent) do
+  vim.api.nvim_create_autocmd("FileType", {
+    pattern = ft,
+    callback = function()
+      vim.bo.shiftwidth = cfg.sw
+      vim.bo.tabstop = cfg.ts
+      vim.bo.softtabstop = cfg.ts
+      vim.bo.expandtab = true
+    end,
+  })
+end
+
+for ft, cfg in pairs(indent_tabs) do
+  vim.api.nvim_create_autocmd("FileType", {
+    pattern = ft,
+    callback = function()
+      vim.bo.shiftwidth = cfg.sw or 8
+      vim.bo.tabstop = cfg.ts or 8
+      vim.bo.softtabstop = 0
+      vim.bo.expandtab = false
+    end,
+  })
+end
+
 -- ---------------------------------------------------------------------------
 -- Autosave (VSCode-style)
 -- ---------------------------------------------------------------------------
