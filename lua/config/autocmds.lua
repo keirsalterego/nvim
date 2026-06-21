@@ -29,6 +29,14 @@ vim.api.nvim_create_autocmd({ "TermOpen", "BufWinEnter" }, {
   end,
 })
 
+-- Disable diagnostics in markdown files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.diagnostic.enable(false, { bufnr = 0 })
+  end,
+})
+
 -- Autoformat setting
 local set_autoformat = function(pattern, bool_val)
   vim.api.nvim_create_autocmd({ "FileType" }, {
