@@ -1,0 +1,732 @@
+[
+  {
+    "name": "hello-world",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "guidos-gorgeous-lasagna",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "ghost-gobble-arcade-game",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "currency-exchange",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "meltdown-mitigation",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "black-jack",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "little-sisters-essay",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "little-sisters-vocab",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "card-games",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "chaitanas-colossal-coaster",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "making-the-grade",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "tisbury-treasure-hunt",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "inventory-management",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "mecha-munch-management",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "locomotive-engineer",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "cater-waiter",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "ellens-alien-game",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "plane-tickets",
+    "type": "concept",
+    "difficulty": null
+  },
+  {
+    "name": "leap",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "triangle",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "grains",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "armstrong-numbers",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "collatz-conjecture",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "bob",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "raindrops",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "darts",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "perfect-numbers",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "reverse-string",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "pangram",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "isogram",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "isbn-verifier",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "rotational-cipher",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "rna-transcription",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "resistor-color",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "resistor-color-duo",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "resistor-color-trio",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "resistor-color-expert",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "secret-handshake",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "anagram",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "house",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "binary-search",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "hamming",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "flatten-array",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "line-up",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "difference-of-squares",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "list-ops",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "etl",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "space-age",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sum-of-multiples",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "gigasecond",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "two-fer",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "square-root",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "pig-latin",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "matching-brackets",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sublist",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "atbash-cipher",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "diamond",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "eliuds-eggs",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "protein-translation",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "prime-factors",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "say",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "acronym",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "series",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "run-length-encoding",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "nth-prime",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "twelve-days",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "roman-numerals",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "word-count",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "scrabble-score",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "proverb",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "luhn",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "dnd-character",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "robot-name",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "phone-number",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "queen-attack",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "transpose",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "yacht",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "game-of-life",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "state-of-tic-tac-toe",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "saddle-points",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "ocr-numbers",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "robot-simulator",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "grade-school",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sieve",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "pythagorean-triplet",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "circular-buffer",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "matrix",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "high-scores",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kindergarten-garden",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "bottle-song",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "allergies",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "simple-cipher",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "poker",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "wordy",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "crypto-square",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "clock",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "rectangles",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "simple-linked-list",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tree-building",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "connect",
+    "type": "practice",
+    "difficulty": "easy"
+  },
+  {
+    "name": "all-your-base",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "swift-scheduling",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "spiral-matrix",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "variable-length-quantity",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "change",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "killer-sudoku-helper",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "flower-field",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rail-fence-cipher",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "palindrome-products",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tournament",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "food-chain",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "scale-generator",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "largest-series-product",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "markdown",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "meetup",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pascals-triangle",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "grep",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "linked-list",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "complex-numbers",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ledger",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hangman",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "go-counting",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "forth",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "binary-search-tree",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "camicia",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rational-numbers",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bowling",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "knapsack",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "relative-distance",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dot-dsl",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "custom-set",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zebra-puzzle",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "affine-cipher",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "word-search",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "alphametics",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bank-account",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "react",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zipper",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "two-bucket",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dominoes",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "satellite",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "book-store",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sgf-parsing",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "paasio",
+    "type": "practice",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rest-api",
+    "type": "practice",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pov",
+    "type": "practice",
+    "difficulty": "hard"
+  }
+]

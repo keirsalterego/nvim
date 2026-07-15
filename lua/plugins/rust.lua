@@ -18,7 +18,7 @@ return {
               allFeatures = false,
               loadOutDirsFromCheck = false,
               buildScripts = {
-                enable = false,
+                enable = true, -- Anchor/protocol crates: RA must run build scripts
               },
             },
             checkOnSave = false,
@@ -26,7 +26,7 @@ return {
               enable = false,
             },
             procMacro = {
-              enable = false,
+              enable = true, -- #[program] / #[derive(Accounts)] need macro expansion
             },
           },
         },

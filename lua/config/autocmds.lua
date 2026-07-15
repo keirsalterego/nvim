@@ -111,6 +111,29 @@ for ft, cfg in pairs(indent_tabs) do
 end
 
 -- ---------------------------------------------------------------------------
+-- Auto-reload files changed on disk (e.g. by an AI agent)
+-- ---------------------------------------------------------------------------
+-- `autoread` is on by default, but nvim only re-checks the file on certain
+-- events. Trigger `checktime` whenever we regain focus or land on a buffer so
+-- external edits pull in without clicking the buffer first.
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHoldI", "TermLeave" }, {
+  group = vim.api.nvim_create_augroup("auto_reload", { clear = true }),
+  callback = function()
+    if vim.bo.buftype == "" and vim.fn.mode() ~= "c" and vim.fn.getcmdwintype() == "" then
+      vim.cmd("checktime")
+    end
+  end,
+})
+
+-- Notify after the buffer was reloaded from disk
+vim.api.nvim_create_autocmd("FileChangedShellPost", {
+  group = vim.api.nvim_create_augroup("auto_reload_notify", { clear = true }),
+  callback = function()
+    vim.notify("File reloaded from disk", vim.log.levels.INFO)
+  end,
+})
+
+-- ---------------------------------------------------------------------------
 -- Autosave (VSCode-style)
 -- ---------------------------------------------------------------------------
 -- Automatically saves the buffer when focus is lost, when leaving a buffer,
