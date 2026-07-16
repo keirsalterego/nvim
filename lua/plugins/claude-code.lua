@@ -39,7 +39,7 @@ return {
       enable = true, -- reload buffers when Claude edits files on disk
       updatetime = 100,
       timer_interval = 1000,
-      show_notifications = true,
+      show_notifications = false, -- no popup on every external edit (autoread is silent)
     },
     git = {
       use_git_root = true, -- launch claude from the repo root

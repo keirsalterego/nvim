@@ -125,14 +125,6 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHo
   end,
 })
 
--- Notify after the buffer was reloaded from disk
-vim.api.nvim_create_autocmd("FileChangedShellPost", {
-  group = vim.api.nvim_create_augroup("auto_reload_notify", { clear = true }),
-  callback = function()
-    vim.notify("File reloaded from disk", vim.log.levels.INFO)
-  end,
-})
-
 -- ---------------------------------------------------------------------------
 -- Autosave (VSCode-style)
 -- ---------------------------------------------------------------------------
