@@ -5,6 +5,10 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    -- Inline images (README badges, logos, screenshots) via Ghostty's kitty
+    -- graphics protocol. render-markdown only draws text; this draws pixels.
+    -- Needs ImageMagick (`convert`) — already present.
+    image = { enabled = true },
     terminal = {
       win = {
         position = "float",
